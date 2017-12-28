@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aquarium Porfolio Site</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheets/main.css">
+    </head>
+    <body>
+ <div class="container">
+     <div id="top">
+         <h2 class="text-center">Tunde Oyewo</h2>
+         <p class="text-center">Developer-In-Training</p>
+     </div>   
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="narbar-brand" href="/">Aquarium</a>
+        </div>
+        
+    </div>
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <% if(!currentUser){ %>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Sign Up</a></li>
+            <% }else{ %>
+            <li><a>Logged in as <%=currentUser.username %></a></li>
+            <li><a href="/logout">Logout</a></li>
+            <% } %>
+            
+        </ul>
+    </div>
+</nav>
+<div class="container">
+   <% if(error && error.length > 0){ %>
+<div class="alert alert-danger flash" role="alert">
+<%= error %>
+</div>
+<% } %>
+<% if(success && success.length > 0){ %>
+<div class="alert alert-success flash" role="alert">
+<%= success %>
+<% } %>
+</div>
+</div>
+</div>

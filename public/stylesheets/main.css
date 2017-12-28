@@ -1,0 +1,62 @@
+body{
+    background-color: #fff;
+}
+/*.thumbnail img {*/
+/*    width: 100%*/
+/*}*/
+/*#top{*/
+/*    width: 100%;*/
+/*    height : 100px;*/
+/*}*/
+#top h2{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    padding-top: 50px;
+    text-transform: uppercase;
+    line-height: 200%;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    
+}
+#top p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-top: 0;
+}
+.middle{
+    background-color: #fff;
+    padding-top: 10px;
+}
+/*#innerbox{*/
+/*    width: 95%;*/
+/*    height: 100%;*/
+/*    background : yellow;*/
+/*}*/
+#delete-form{
+    display: inline;
+}
+.title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1px;
+    padding: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+.buttonLanding{
+    position: relative;
+    text-align: center;
+    left : 300px;
+}
+.login{
+    width: 30%;
+    margin: 25px auto;
+}
+
+.flash{
+    width: 35%
+}
